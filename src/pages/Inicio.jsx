@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import usePontos from "../hooks/usePontos";
 import IconCircle from "../components/IconCircle";
 import ProgressBar from "../components/ProgressBar";
+
 
 import globoImg from "../assets/imgs/globo.png";
 import folhaImg from "../assets/imgs/folha.png";
@@ -14,6 +16,7 @@ import garrafaPetImg from "../assets/imgs/garrafapet.png";
 
 function Inicio() {
     const { pontos: pontosEco } = usePontos();
+    const navigate = useNavigate();
 
     return (
         <section className="mx-auto flex w-full min-w-0 max-w-md flex-col gap-2.5 overflow-x-hidden text-[#1d3a27]">
@@ -87,7 +90,7 @@ function Inicio() {
                 <div className="grid w-full min-w-0 grid-cols-4 gap-2 sm:gap-2.5">
                     <article
                         className="flex aspect-square min-w-0 cursor-pointer flex-col items-center justify-center rounded-2xl border border-[#5d8a68] bg-[#E2F0DA] p-1 text-center shadow-md"
-                        onClick={() => { window.location.href = "/registrardescarte"; }}
+                        onClick={() => navigate("/registrardescarte")}
                     >
                         <img
                             src={registrarDescarteImg}
@@ -101,7 +104,7 @@ function Inicio() {
 
                     <article
                         className="flex aspect-square min-w-0 cursor-pointer flex-col items-center justify-center rounded-2xl border border-[#5d8a68] bg-[#E2F0DA] p-1 text-center shadow-md"
-                        onClick={() => { window.location.href = "/mapa"; }}
+                        onClick={() => navigate("/mapa")}
                     >
                         <img
                             src={mapaImg}
@@ -115,7 +118,7 @@ function Inicio() {
 
                     <article
                         className="flex aspect-square min-w-0 cursor-pointer flex-col items-center justify-center rounded-2xl border border-[#5d8a68] bg-[#E2F0DA] p-1 text-center shadow-md"
-                        onClick={() => { window.location.href = "/missoes"; }}
+                        onClick={() => navigate("/missoes")}
                     >
                         <img
                             src={missoesImg}
@@ -129,7 +132,7 @@ function Inicio() {
 
                     <article
                         className="flex aspect-square min-w-0 cursor-pointer flex-col items-center justify-center rounded-2xl border border-[#5d8a68] bg-[#E2F0DA] p-1 text-center shadow-md"
-                        onClick={() => { window.location.href = "/recompensas"; }}
+                        onClick={() => navigate("/recompensas")}
                     >
                         <img
                             src={recompensasImg}
