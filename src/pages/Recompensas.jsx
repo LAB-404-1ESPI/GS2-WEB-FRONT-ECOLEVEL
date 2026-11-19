@@ -1,6 +1,5 @@
 
 import { useEffect, useMemo, useState } from "react";
-import useTravarScroll from "../hooks/useTravarScroll";
 import usePontos from "../hooks/usePontos";
 import Modal from "../components/Modal";
 import GreenButton from "../components/GreenButton";
@@ -71,8 +70,6 @@ function Recompensas() {
   const [pending, setPending] = useState(null);
   const [showHistory, setShowHistory] = useState(false);
   const [toast, setToast] = useState(null);
-
-  useTravarScroll();
 
   useEffect(() => {
     if (!toast) return;
@@ -156,7 +153,7 @@ function Recompensas() {
 
   return (
     <section
-      className="mx-auto min-h-full w-full max-w-md px-3.5 pb-4 pt-3 text-[#1d3a27]"
+      className="mx-auto min-h-full w-full max-w-md px-3.5 pb-25 pt-3 text-[#1d3a27]"
       aria-labelledby="rw-title"
     >
       <h1 id="rw-title" className="flex items-center gap-2 text-2xl font-bold">

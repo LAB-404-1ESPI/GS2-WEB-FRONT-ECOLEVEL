@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import useTravarScroll from "../hooks/useTravarScroll";
 
 import trofeuImg from "../assets/imgs/missoesacaorapida.png";
 import avatarImg from "../assets/imgs/usuarioclaro.png";
@@ -119,8 +118,6 @@ function Podio({ lugar, pessoa, altura, primeiro }) {
 
 function Ranking() {
   const [aba, setAba] = useState("geral");
-
-  useTravarScroll();
 
   const { voce, lista } = RANKING[aba];
   const [primeiro, segundo, terceiro, ...demais] = lista;

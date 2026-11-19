@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import useTravarScroll from "../hooks/useTravarScroll";
 
 import camisaImg from "../assets/imgs/personalizacaousuario.png";
 import desconhecidoImg from "../assets/imgs/usuarioclaro.png";
@@ -37,10 +36,7 @@ function carregar() {
 function Personalizacao() {
   const [escolha, setEscolha] = useState(carregar);
 
-  // trava o scroll da página (igual às outras telas)
-  useTravarScroll();
 
-  // salva a escolha
   useEffect(() => {
     localStorage.setItem(CHAVE, JSON.stringify(escolha));
   }, [escolha]);

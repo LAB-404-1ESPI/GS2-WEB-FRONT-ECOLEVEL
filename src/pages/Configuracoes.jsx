@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import useTravarScroll from "../hooks/useTravarScroll";
+import { useNavigate } from "react-router-dom"
 import MenuRow from "../components/MenuRow";
 import Arrow from "../components/Arrow";
 import Modal from "../components/Modal";
@@ -84,7 +83,7 @@ function Configuracoes({ setUsuarioLogado }) {
   const [aviso, setAviso] = useState("");
   const [senha, setSenha] = useState({ atual: "", nova: "", confirmar: "" });
   const [erro, setErro] = useState("");
-  useTravarScroll();
+  
 
  
   useEffect(() => {

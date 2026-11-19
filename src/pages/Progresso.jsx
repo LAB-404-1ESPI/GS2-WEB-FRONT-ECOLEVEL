@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import useTravarScroll from "../hooks/useTravarScroll";
 import useProgresso from "../hooks/useProgresso";
 import usePontos from "../hooks/usePontos";
 import IconCircle from "../components/IconCircle";
@@ -72,7 +71,6 @@ function Progresso() {
   const { pontos } = usePontos();
   const [showModal, setShowModal] = useState(false);
 
-  useTravarScroll();
 
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && setShowModal(false);

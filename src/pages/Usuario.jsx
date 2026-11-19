@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import useTravarScroll from "../hooks/useTravarScroll";
 import usePontos from "../hooks/usePontos";
 import IconCircle from "../components/IconCircle";
 import Avatar from "../components/Avatar";
@@ -49,7 +48,7 @@ function Usuario({ setUsuarioLogado }) {
   const [historicoAberto, setHistoricoAberto] = useState(false);
 
   const porcentagem = Math.min(100, Math.round((USUARIO.xp / USUARIO.xpMeta) * 100));
-  useTravarScroll();
+
 
   useEffect(() => {
     const fecharComEsc = (e) => e.key === "Escape" && setHistoricoAberto(false);

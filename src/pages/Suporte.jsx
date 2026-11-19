@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import useTravarScroll from "../hooks/useTravarScroll";
 import Modal from "../components/Modal";
 import GreenButton from "../components/GreenButton";
 import Arrow from "../components/Arrow";
@@ -48,21 +47,16 @@ function Suporte() {
   const [texto, setTexto] = useState("");
   const [anexos, setAnexos] = useState([]);
   const [aviso, setAviso] = useState("");
-  const [aberto, setAberto] = useState(null); // { titulo, texto }
+  const [aberto, setAberto] = useState(null);
   const inputRef = useRef(null);
 
-  // número do próximo chamado (começa em #103)
   const proximo = Math.max(102, ...chamados.map((c) => c.id)) + 1;
 
-  // trava o scroll da página (igual às outras telas)
-  useTravarScroll();
-
-  // salva os chamados
   useEffect(() => {
     localStorage.setItem(CHAVE, JSON.stringify(chamados));
   }, [chamados]);
 
-  // some com o aviso depois de 2,5 segundos
+
   useEffect(() => {
     if (!aviso) return;
     const t = setTimeout(() => setAviso(""), 2500);
