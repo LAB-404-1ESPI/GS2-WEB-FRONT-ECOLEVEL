@@ -5,7 +5,7 @@ import Personalizacao from "./pages/Personalizacao";
 import Suporte from "./pages/Suporte";
 import Progresso from "./pages/Progresso";
 import MainLayout from "./layouts/MainLayout";
-import RegistrarDescarte from "./pages/RegistrarDescarte.jsx";
+import RegistrarDescarte from "./pages/RegistrarDescarte";
 import Qrcode from "./pages/Qrcode";
 import Login from "./pages/Login";
 import Inicio from "./pages/Inicio";
