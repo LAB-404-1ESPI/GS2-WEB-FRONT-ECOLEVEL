@@ -10,6 +10,8 @@ import carrefourImg from "../assets/imgs/carrefour.png";
 import adidasImg from "../assets/imgs/adidas.png";
 import googlePlayImg from "../assets/imgs/google.png";
 import superReciclaImg from "../assets/imgs/super-recicla.png";
+import recompensasacaorapidaImg from "../assets/imgs/recompensasacaorapida.png";
+import folhaImg from "../assets/imgs/folha.png";
 
 const REWARDS = [
   {
@@ -159,7 +161,7 @@ function Recompensas() {
     >
       <h1 id="rw-title" className="flex items-center gap-2 text-2xl font-bold">
         <img
-          src="./src/assets/imgs/recompensasacaorapida.png"
+          src={recompensasacaorapidaImg}
           alt=""
           className="h-6 w-6 object-contain"
         />
@@ -173,7 +175,7 @@ function Recompensas() {
       <div className="flex items-center gap-3 rounded-full border-[1.5px] border-[#6fae7e] bg-[#bee6c6]/55 px-3 py-2.5">
         <div className="grid h-11 w-11 flex-none place-items-center rounded-full bg-[#bfe6c6]">
           <img
-            src="./src/assets/imgs/folha.png"
+            src={folhaImg}
             alt="Pontos Eco"
             className="h-6 w-6 object-contain"
           />
