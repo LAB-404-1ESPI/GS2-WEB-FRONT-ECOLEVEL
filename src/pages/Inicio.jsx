@@ -1,7 +1,16 @@
-
 import usePontos from "../hooks/usePontos";
 import IconCircle from "../components/IconCircle";
 import ProgressBar from "../components/ProgressBar";
+
+import globoImg from "../assets/imgs/globo.png";
+import folhaImg from "../assets/imgs/folha.png";
+import estrelaImg from "../assets/imgs/estrela.png";
+import registrarDescarteImg from "../assets/imgs/registrardescarte.png";
+import mapaImg from "../assets/imgs/mapa.png";
+import missoesImg from "../assets/imgs/missoesacaorapida.png";
+import recompensasImg from "../assets/imgs/recompensasacaorapida.png";
+import circuloImg from "../assets/imgs/circulo.png";
+import garrafaPetImg from "../assets/imgs/garrafapet.png";
 
 function Inicio() {
     const { pontos: pontosEco } = usePontos();
@@ -23,7 +32,7 @@ function Inicio() {
 
                 <div className="w-[38%] max-w-[150px] shrink-0">
                     <img
-                        src="./src/assets/imgs/globo.png"
+                        src={globoImg}
                         alt=""
                         className="h-auto w-full object-contain"
                     />
@@ -34,7 +43,7 @@ function Inicio() {
             <div className="grid min-h-[100px] w-full min-w-0 grid-cols-2 rounded-2xl border border-[#5d8a68] bg-[#E2F0DA] p-2 shadow-md sm:min-h-[116px] sm:p-4">
                 <div className="flex min-w-0 items-center justify-center gap-1.5 border-r border-[#1d3a27]/60 pr-1 sm:gap-2 sm:pr-2">
                     <IconCircle
-                        src="./src/assets/imgs/folha.png"
+                        src={folhaImg}
                         size="relative h-10 w-10 shrink-0 sm:h-16 sm:w-16"
                         iconSize="absolute inset-0 m-auto h-6 w-6 object-contain sm:h-9 sm:w-9"
                     />
@@ -52,7 +61,7 @@ function Inicio() {
 
                 <div className="flex min-w-0 items-center justify-center gap-1.5 pl-1 sm:gap-2 sm:pl-2">
                     <IconCircle
-                        src="./src/assets/imgs/estrela.png"
+                        src={estrelaImg}
                         size="relative h-10 w-10 shrink-0 sm:h-16 sm:w-16"
                         iconSize="absolute inset-0 m-auto h-6 w-6 object-contain sm:h-9 sm:w-9"
                     />
@@ -81,7 +90,7 @@ function Inicio() {
                         onClick={() => { window.location.href = "/registrardescarte"; }}
                     >
                         <img
-                            src="./src/assets/imgs/registrardescarte.png"
+                            src={registrarDescarteImg}
                             alt="Registrar descarte"
                             className="h-7 w-7 object-contain sm:h-9 sm:w-9"
                         />
@@ -95,7 +104,7 @@ function Inicio() {
                         onClick={() => { window.location.href = "/mapa"; }}
                     >
                         <img
-                            src="./src/assets/imgs/mapa.png"
+                            src={mapaImg}
                             alt="Mapa"
                             className="h-7 w-7 object-contain sm:h-9 sm:w-9"
                         />
@@ -109,7 +118,7 @@ function Inicio() {
                         onClick={() => { window.location.href = "/missoes"; }}
                     >
                         <img
-                            src="./src/assets/imgs/missoesacaorapida.png"
+                            src={missoesImg}
                             alt="Missões"
                             className="h-7 w-7 object-contain sm:h-9 sm:w-9"
                         />
@@ -123,7 +132,7 @@ function Inicio() {
                         onClick={() => { window.location.href = "/recompensas"; }}
                     >
                         <img
-                            src="./src/assets/imgs/recompensasacaorapida.png"
+                            src={recompensasImg}
                             alt="Recompensas"
                             className="h-7 w-7 object-contain sm:h-9 sm:w-9"
                         />
@@ -167,13 +176,13 @@ function Inicio() {
                 <div className="flex shrink-0 items-center gap-1">
                     <div className="relative h-12 w-12 sm:h-16 sm:w-16">
                         <img
-                            src="./src/assets/imgs/circulo.png"
+                            src={circuloImg}
                             alt=""
                             className="absolute inset-0 h-full w-full object-contain"
                         />
 
                         <img
-                            src="./src/assets/imgs/garrafapet.png"
+                            src={garrafaPetImg}
                             alt=""
                             className="absolute inset-0 m-auto h-10 w-10 object-contain sm:h-14 sm:w-14"
                         />
@@ -199,7 +208,7 @@ function Inicio() {
                 onClick={() => { window.location.href = "/mapa"; }}
             >
                 <img
-                    src="./src/assets/imgs/mapa.png"
+                    src={mapaImg}
                     alt=""
                     className="h-9 w-9 shrink-0 object-contain"
                 />
