@@ -153,7 +153,7 @@ function Recompensas() {
 
   return (
     <section
-      className="mx-auto min-h-full w-full max-w-md px-3.5 pb-25 pt-3 text-[#1d3a27]"
+      className="mx-auto min-h-full w-full max-w-md px-3.5 pb-12 pt-3 text-[#1d3a27]"
       aria-labelledby="rw-title"
     >
       <h1 id="rw-title" className="flex items-center gap-2 text-2xl font-bold">

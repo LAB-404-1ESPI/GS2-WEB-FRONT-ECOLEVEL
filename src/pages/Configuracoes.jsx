@@ -132,7 +132,7 @@ function Configuracoes({ setUsuarioLogado }) {
     "w-full rounded-full border-[1.5px] border-[#1f6b34] bg-[#3fe45a] py-2.5 text-sm font-semibold";
 
   return (
-    <section className="mx-auto w-full max-w-md px-3.5 pb-2 text-[#1d3a27]">
+    <section className="mx-auto w-full max-w-md px-3.5  text-[#1d3a27]">
       <h1 className="-mt-1 flex items-center gap-2 text-2xl font-bold">
         <img src={engrenagemImg} alt="" className="h-9 w-9 object-contain" />
         Configurações

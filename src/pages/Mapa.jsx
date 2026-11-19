@@ -68,7 +68,7 @@ function Mapa() {
     }, []);
 
     return (
-        <section className="w-full space-y-4 pb-2">
+        <section className="w-full space-y-4 pb-48">
             <div>
                 <div className="flex items-center gap-3">
                     <img

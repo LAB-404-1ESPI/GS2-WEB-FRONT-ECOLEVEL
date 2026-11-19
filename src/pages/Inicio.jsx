@@ -19,7 +19,7 @@ function Inicio() {
     const navigate = useNavigate();
 
     return (
-        <section className="mx-auto flex w-full min-w-0 max-w-md flex-col gap-2.5 overflow-x-hidden text-[#1d3a27]">
+        <section className="mx-auto flex w-full min-w-0 max-w-md flex-col gap-2.5 overflow-x-hidden text-[#1d3a27] pb-15">
 
 
             <div className="mt-3 flex w-full min-w-0 items-center justify-between gap-2">

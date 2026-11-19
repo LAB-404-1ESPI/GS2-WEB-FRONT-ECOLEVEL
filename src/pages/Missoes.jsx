@@ -73,7 +73,7 @@ function Missoes() {
   const porcentagem = Math.round((EM_ANDAMENTO.atual / EM_ANDAMENTO.total) * 100);
 
   return (
-    <section className="mx-auto w-full max-w-md px-3.5 pt-3 pb-30 text-[#1d3a27]">
+    <section className="mx-auto w-full max-w-md px-3.5 pt-3 pb-20 text-[#1d3a27]">
       <h1 className="flex items-center gap-2 text-2xl font-bold">
         <img src={missoesIconeImg} alt="" className="h-9 w-9 object-contain" />
         Missões
