@@ -22,10 +22,13 @@ function MainLayout() {
                     <Header />
                 </div>
 
+                {/* Apenas o conteúdo das páginas possui rolagem */}
                 <main className="app-scroll mx-auto min-h-0 w-full max-w-7xl min-w-0 flex-1 overflow-x-hidden overflow-y-auto px-4 py-6 pb-32">
                     <Outlet />
                     <Footer />
                 </main>
+
+                
 
                 <BottomNav />
 
